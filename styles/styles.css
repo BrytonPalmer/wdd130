@@ -22,8 +22,8 @@ h1 {
 
 img {
     width: 150px;
-    height: (var(--height, auto));
-    border: (var(--border, 1px solid black));
+    height: var(--height);
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -38,24 +38,24 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: (var(--border, 1px solid black)); 
+    border: var(--border); 
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: (var(--text-align, center));
+    text-align: var(--text-align);
 }
 aside img {
     width: 200px;
-    height: (var(--height, auto));
+    height: var(--height);
 }
 
 main img{
     width: 150px;
-    height: (var(--height, auto));
+    height: var(--height);
 }
 footer {
     margin-top: 15px;
-    border-top: (var(--border, 1px solid black));
-    text-align: (var(--text-align, center));
+    border-top: var(--border);
+    text-align: var(--text-align);
 
 }
