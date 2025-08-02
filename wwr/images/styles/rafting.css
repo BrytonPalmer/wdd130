@@ -189,3 +189,119 @@ footer .socialmedia img {
   height: 50px;
 }
 
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.company-info,
+.map-container {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+.map-container iframe {
+  border-radius: 8px;
+  width: 100%;
+  height: 250px;
+  border: 0;
+}
+
+
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.profile-card {
+  text-align: center;
+  max-width: 300px;
+}
+.profile-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.team-section-heading {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.team-section-subheading {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+.contact-form label,
+.contact-form p {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.submit-btn {
+  margin-top: 1.5rem;
+  background-color: #026aa7;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #014f82;
+}
+
+.contact_h3 {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  margin-top: 1rem;
+  text-align: center;
+}
