@@ -192,8 +192,8 @@ footer .socialmedia img {
 .contact-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 1rem;
+  padding: 1rem;
   justify-content: center;
   align-items: flex-start;
   text-align: left;
@@ -204,11 +204,20 @@ footer .socialmedia img {
   flex: 1 1 300px;
   max-width: 500px;
 }
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
 .map-container iframe {
   border-radius: 8px;
-  width: 100%;
+  width: 1000px;
   height: 250px;
   border: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
