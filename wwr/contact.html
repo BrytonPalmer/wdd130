@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <header>
@@ -26,7 +31,7 @@
     <main>
     <section class="contact-section">
     <h2>Contact Us</h2>
-    <h3>Ready to plan your next rafting adventure or have questions? Reach out — we’re here to help!</h3>
+    <h3>Ready to plan your next rafting adventure or have questions? Reach out — we're here to help!</h3>
 
     <div class="company-info">
       <h3>Rapids Rafting Company</h3>
@@ -89,7 +94,7 @@
         <h3 class="contact_h3">We'd love to hear from you! Whether you have questions about our trips, need help with bookings, or just want to share your rafting experiences, feel free to reach out.</h3>
         
         <section class="contact-form">
-            <form action="submit_form.php" method="post" class="contact-form">
+            <form action="submit_form.php" method="post" class="contact-form" id="contact-form">
             <fieldset>
                 <legend>Send us a message</legend>
 
@@ -101,27 +106,26 @@
 
                 <p>Purpose of your message:</p>
                 <label>
-                <input type="radio" name="purpose" value="General Inquiry" required>
+                <input type="radio" name="purpose" value="General Inquiry" id="purpose_of_message" required>
                 General Inquiry
                 </label>
                 <label>
-                <input type="radio" name="purpose" value="Reservation Question">
+                <input type="radio" name="purpose" value="Reservation Question" id="purpose_of_reservation">
                 Reservation Question
                 </label>
                 <label>
-                <input type="radio" name="purpose" value="Website Suggestion">
+                <input type="radio" name="purpose" value="Website Suggestion" id="purpose_of_website">
                 Website Suggestion
                 </label>
-
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <label>
-                <input type="checkbox" name="subscribe">
+                <input type="checkbox" name="subscribe" id="subscribe" value="yes">
                 Please subscribe me to the monthly newsletter
                 </label>
 
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="submit-btn" id="submit-btn">Send Message</button>
             </fieldset>
             </form>
         </section>
@@ -142,3 +146,4 @@
         </nav>
     </footer>
 </body>
+</html>
